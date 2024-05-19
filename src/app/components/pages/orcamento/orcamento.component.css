@@ -1,0 +1,26 @@
+.pageorcamento{
+    /* border: 2px solid red; */
+}
+
+.pageorcamento .titulo{
+    border-bottom: 3px solid red;
+    width: 100%;
+}
+
+.pageorcamento ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: black;
+    gap: 6px;
+    font-size: 8px;
+}
+
+.pageorcamento ul li{
+    list-style-type: none;
+}
+
+.pageorcamento ul li a{
+    text-decoration: none;
+    color: black;
+}

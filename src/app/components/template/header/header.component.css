@@ -1,0 +1,29 @@
+.header{
+    height: 5vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .infoheader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+}
+
+.header .logo{
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo .img{
+    width: 100px;
+}
