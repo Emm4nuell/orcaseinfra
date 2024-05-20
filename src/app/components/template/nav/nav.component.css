@@ -16,6 +16,7 @@
 
 .principal .section{
     width: 100%;
+    background-color: #efefef;
 }
 
 .nav ul{
@@ -31,7 +32,7 @@
 
 .nav ul li a{
     text-decoration: none;
-    font-size: 8px;
+    font-size: 10px;
     display: flex;
     align-items: center;
 }
@@ -40,10 +41,31 @@
     color: #ffff;
 }
 
-.nav ul li a i{
+.nav ul li a .icon{
+    position: absolute;
+    left: 80px;
     color: white;
-    padding: 10px;
-    font-size: 16px;
+    margin-left: 40px;
+}
+
+.nav ul li ul{
+    color: white;
+    background-color: #555555;
+}
+
+.nav ul li ul li{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li ul li i{
+    margin-left: 9px;
+}
+
+.nav ul ul li a{
+    color: white;
+    margin-right: 1rem;
+    font-size: 9px;
 }
 
 .section{
@@ -56,3 +78,28 @@ ul li:hover{
     cursor: pointer;
     transition: 1s;
 }
+
+i{
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.open{
+    display: block;
+}
+
+.close{
+    display: none;
+}
+
+.rotateopen{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+.rotateclose{
+    transform: rotate(0deg);
+    transition: 0.5s;
+}
+

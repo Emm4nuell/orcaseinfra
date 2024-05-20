@@ -9,7 +9,7 @@ const routes: Routes = [
     component: DashBoardComponent
   },
   {
-    path: 'orcamento',
+    path: 'novoorcamento',
     component: OrcamentoComponent
   }
 ];
