@@ -1,46 +1,37 @@
-.pageorcamento{
-    /* border: 2px solid black; */
-}
-
 .pageorcamento .titulo{
     border-bottom: 3px solid red;
     width: 100%;
 }
 
-.pageorcamento ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    color: black;
-    gap: 6px;
-    font-size: 8px;
-}
-
-.pageorcamento ul li{
-    list-style-type: none;
-}
-
-.pageorcamento ul li a{
-    text-decoration: none;
-    color: black;
-}
-
 .pageorcamento form{
     margin-top: 1rem;
-    border: 2px solid #ccc;
-    border-top: 1rem solid #ccc;
-    /* padding: 12px; */
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 3px;
     background-color: white;
 }
 
-.pageorcamento form .inputform{
-    position: relative;
+.pageorcamento form .box-input{
     display: flex;
-    margin: 15px;
 }
 
-form .inputform input{
-    margin-top: 5px;
+.pageorcamento form .tituloform{
+    margin-bottom: 3px;
+    background-color: #111;
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 3px;
+}
+
+.pageorcamento form .box-input .inputform{
+    position: relative;
+    display: flex;
+    margin: 7px;
+    width: 100%;
+}
+
+form .box-input .inputform input{
+    margin-top: 0px;
     outline: none;
     padding: 5px;
     border: none;
@@ -53,7 +44,6 @@ form .inputform input{
 form .inputform label{
     color: #ccc;
     font-weight: 300;
-    margin: 5px;
     position: absolute;
     left: 0;
     cursor: text;
@@ -66,7 +56,7 @@ form .inputform input:focus ~ label,
 form .inputform input:valid ~ label{
     font-size: 9px;
     color: #b9b9b9;
-    margin-top: -12px;
+    margin-top: -16px;
     transition: 1s;
     margin-left: 0;
     font-weight: 400;
@@ -74,4 +64,20 @@ form .inputform input:valid ~ label{
 
 form .inputform .width{
     width: 100%;
+}
+
+form .box-input .inputform button{
+    background-color: rgb(10, 152, 10);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    font-weight: 500;
+    width: 80px;
+}
+
+form .box-input .inputform button:hover{
+    box-shadow: 0px 0px 3px green;
+    transition: 0.5s;
 }

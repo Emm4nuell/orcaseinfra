@@ -17,13 +17,25 @@
     height: 5vh;
 }
 
+.header .infoheader .sair{
+    font-size: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+.header .infoheader .sair a{
+    color: red;
+    text-decoration: none;
+}
+
 .header .logo{
-    min-width: 150px;
+    min-width: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .header .logo .img{
-    width: 100px;
+    width: 80px;
+    height: 5vh;
 }

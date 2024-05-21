@@ -1,13 +1,36 @@
 <div class="pageorcamento">
     <div class="titulo">NOVO ORÇAMENTO</div>
     <form action="" class="form">
-        <div class="inputform">
-            <input type="text" name="codigo" required="true"/>
-            <label for="codigo">Código</label>
+        <div class="tituloform"><span>Formulário</span></div>
+
+        <div class="box-input">
+            <div class="inputform">
+                <input type="text" name="codigo" required="true"/>
+                <label for="codigo">Código</label>
+            </div>
         </div>
-        <div class="inputform">
-            <input class="width" type="text" name="descricao" required="true"/>
-            <label for="descricao">Descrição</label>
+
+        <div class="box-input">
+            <div class="inputform">
+                <input class="width" type="text" name="descricao" required="true"/>
+                <label for="descricao">Descrição</label>
+            </div>
+        </div>
+
+        <div class="box-input">
+            <div class="inputform">
+                <input class="width" type="text" name="estado" required="true"/>
+                <label for="estado">Estado</label>
+            </div>
+            <div class="inputform">
+                <input class="width" type="date" name="sinapi" required="true"/>
+                <!-- <label for="sinapi">Data SINAPI</label> -->
+            </div>
+        </div>
+        <div class="box-input">
+            <div class="inputform">
+                <button type="submit">Cadastrar</button>
+            </div>
         </div>
     </form>
     <!-- <ul>
