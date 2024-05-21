@@ -1,3 +1,7 @@
+.pageorcamento{
+    padding: 9px;
+}
+
 .pageorcamento .titulo{
     border-bottom: 3px solid red;
     width: 100%;

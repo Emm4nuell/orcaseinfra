@@ -2,20 +2,28 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     font-weight: 300;
     font-style: normal;
 }
 
+.nav .logo{
+    /* min-width: 160px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 5vh;
+}
+
+.nav .logo .img{
+    width: 80px;
+}
+
 .principal .nav{
     background-color: #111;    
     min-width: 160px;
-}
-
-.principal .section{
-    width: 100%;
-    background-color: #f8f8f8;
 }
 
 .nav ul{
@@ -65,11 +73,6 @@
     color: white;
     margin-right: 1rem;
     font-size: 9px;
-}
-
-.section{
-    width: 100%;
-    padding: 10px;
 }
 
 ul li:hover{

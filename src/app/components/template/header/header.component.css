@@ -1,10 +1,10 @@
-.header{
+header{
     height: 5vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     padding: 0;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
 }
 
 .header .infoheader{
@@ -28,14 +28,8 @@
     text-decoration: none;
 }
 
-.header .logo{
-    min-width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header .logo .img{
-    width: 80px;
-    height: 5vh;
+.header .section{
+    width: 100%;
+    background-color: #f8f8f8;
+    height:95vh;
 }
