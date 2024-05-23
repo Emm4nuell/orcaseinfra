@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  mostrar: boolean[] = [false, false, false];
+  mostrar: boolean[] = [true, true, true];
 
   constructor() { }
 

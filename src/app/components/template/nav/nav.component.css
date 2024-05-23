@@ -1,29 +1,26 @@
 .principal{
-    width: 100%;
     padding: 0;
     margin: 0;
     height: 100vh;
-    display: flex;
-    font-weight: 300;
-    font-style: normal;
+    background-color: #111;
 }
 
-.nav .logo{
-    /* min-width: 160px; */
+.principal .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
-    height: 5vh;
+    height: 7vh;
 }
 
-.nav .logo .img{
-    width: 80px;
+.principal .logo .img{
+    width: 150px;
 }
 
 .principal .nav{
-    background-color: #111;    
-    min-width: 160px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav ul{
@@ -39,7 +36,6 @@
 
 .nav ul li a{
     text-decoration: none;
-    font-size: 10px;
     display: flex;
     align-items: center;
 }
@@ -50,7 +46,7 @@
 
 .nav ul li a .icon{
     position: absolute;
-    left: 80px;
+    left: 100px;
     color: white;
     margin-left: 50px;
 }
@@ -63,16 +59,16 @@
 .nav ul li ul li{
     display: flex;
     align-items: center;
+    font-size: 11px;
 }
 
 .nav ul li ul li i{
-    margin-left: 9px;
+    margin-left: 12px;
 }
 
 .nav ul ul li a{
     color: white;
     margin-right: 1rem;
-    font-size: 9px;
 }
 
 ul li:hover{
@@ -83,8 +79,8 @@ ul li:hover{
 
 i{
     color: white;
-    font-size: 14px;
     padding: 9px;
+    font-size: 16px;
 }
 
 .open{

@@ -22,8 +22,7 @@
     margin-bottom: 3px;
     background-color: #111;
     color: white;
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 12px;
     padding: 3px;
 }
 
@@ -35,18 +34,18 @@
 }
 
 form .box-input .inputform input{
-    margin-top: 0px;
+    margin-top: 6px;
     outline: none;
     padding: 5px;
     border: none;
-    color: #ccc;
-    font-size: 10px;
+    color: #8d8d8d;
+    font-size: 12px;
     /* border: 1px solid #111; */
-    box-shadow: 0px 0px 3px #ccc;
+    box-shadow: 0px 0px 2px #9d9d9d;
 }
 
 form .inputform label{
-    color: #ccc;
+    color: #9d9d9d;
     font-weight: 300;
     position: absolute;
     left: 0;
@@ -54,13 +53,14 @@ form .inputform label{
     font-size: 10px;
     transition: 1s;
     margin-left: 6px;
+    margin-top: 8px;
 }
 
 form .inputform input:focus ~ label,
 form .inputform input:valid ~ label{
     font-size: 9px;
-    color: #b9b9b9;
-    margin-top: -16px;
+    color: #9d9d9d;
+    margin-top: -12px;
     transition: 1s;
     margin-left: 0;
     font-weight: 400;
