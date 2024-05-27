@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   mostrar: boolean[] = [true, true, true];
+  link?: String;
 
-  constructor() { }
+  constructor(private location: Location) {
+   }
 
   acionarmostrar(valor: number): any{
+    this.link = this.location.path()
     switch(valor){
       case 0: return this.mostrar[0] = !this.mostrar[0];
       case 1: return this.mostrar[1] = !this.mostrar[1];
@@ -20,6 +24,7 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.link = this.location.path()
   }
 
 }

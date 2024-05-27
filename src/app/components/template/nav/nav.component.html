@@ -1,35 +1,55 @@
 <div class="principal">
   <div class="logo">
-    <img class="img" src="assets/img/prefeitura.png" alt="prefeitura" />
+    <img class="img" src="assets/img/JOAOPESSOACONECTADO.p" alt="prefeitura" />
   </div>
   <nav class="nav">
     <ul>
 
-      <li><a routerLink=""><i class="material-icons">home</i><span>Dashboard</span></a></li>
+      <li><a routerLink=""><div class="link"><i class="material-icons">home</i><span>Dashboard</span></div></a></li>
 
-      <li><a (click)="acionarmostrar(0)"><i class="material-icons">edit_document</i>
-        <span>Orçamentos</span><i [ngClass]="mostrar[0] ? 'rotateopen' : 'rotateclose'" class="material-icons icon">chevron_right</i></a>
+      <li><a (click)="acionarmostrar(0)">
+        <div class="link">
+          <!-- <i class="material-icons">edit_document</i> -->
+          <span>Orçamentos</span>
+        </div>
+        <i [ngClass]="mostrar[0] ? 'rotateopen' : 'rotateclose'" class="material-icons icon">chevron_right</i></a>
         <ul [ngClass]="mostrar[0] ? 'open': 'close'">
-          <li><i class="material-icons icon">add</i><a routerLink="novoorcamento">Novo orçamento</a></li>
+          <li><i class="material-icons icon">add</i><a routerLink="novoorcamento">Criar orçamento</a></li>
           <li><i class="material-icons">search</i><a href="">Pesquisar orçamento</a></li>
+          <li><i class="material-icons">list</i><a href="">Orçamento em andamento</a></li>
         </ul>
       </li>
 
-      <li><a routerLink="pesquisarOrcamento"><i class="material-icons">plagiarism</i><span>Pesquisar Orçamento</span></a></li>
-
-      <li class="li"><a (click)="acionarmostrar(2)"><i class="material-icons">list</i>
-        <span>Cotaçoes</span><i [ngClass]="mostrar[2] ? 'rotateopen' : 'rotateclose'" class="material-icons icon">chevron_right</i></a>
-        <ul [ngClass]="mostrar[2] ? 'open': 'close'">
+      <li class="li"><a (click)="acionarmostrar(1)">
+        <div class="link">
+          <!-- <i class="material-icons">list</i> -->
+          <span>Cotaçoes</span>
+        </div>
+        <i [ngClass]="mostrar[1] ? 'rotateopen' : 'rotateclose'" class="material-icons icon">chevron_right</i></a>
+        <ul [ngClass]="mostrar[1] ? 'open': 'close'">
           <li><i class="material-icons icon">add</i><a href=""><span>Nova cotação</span></a></li>
           <li><i class="material-icons">search</i><a href="">Pesquisar cotação</a></li>
         </ul>
       </li>
 
-      <li><a><i class="material-icons">edit_document</i><span>Relatórios</span></a></li>
+      <li class="li"><a (click)="acionarmostrar(2)">
+        <div class="link">
+          <!-- <i class="material-icons">list</i> -->
+          <span>Pesquisa de Preço</span>
+        </div>
+        <i [ngClass]="mostrar[2] ? 'rotateopen' : 'rotateclose'" class="material-icons icon">chevron_right</i></a>
+        <ul [ngClass]="mostrar[2] ? 'open': 'close'">
+          <li><i class="material-icons icon">list</i><a href=""><span>Composição/Serviço</span></a></li>
+          <li><i class="material-icons">list</i><a href="">Insumo</a></li>
+        </ul>
+      </li>
 
-      <li><a><i class="material-icons">notifications_active</i><span>Notificações</span></a></li>
+      <li><a><div class="link"><i class="material-icons">edit_document</i><span>Relatórios</span></div></a></li>
 
-      <li><a><i class="material-icons">help</i><span>Sobre</span></a></li>
+      <li><a><div class="link"><i class="material-icons">notifications_active</i><span>Notificações</span></div></a></li>
+
+      <li><a><div class="link"><i class="material-icons">help</i><span>Sobre</span></div></a></li>
     </ul>
+    
   </nav>
 </div>

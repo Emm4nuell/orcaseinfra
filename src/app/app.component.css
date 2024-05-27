@@ -11,3 +11,11 @@
 .component .div-header{
     width: 100%;
 }
+
+.menu-open{
+    display: block;
+}
+
+.menu-close{
+    display: none;
+}

@@ -1,10 +1,10 @@
 <div class="component">
-    <div class="div-nav">
+    <div class="div-nav" [ngClass]="menuts() ? 'menu-open' : 'menu-close'">
         <app-nav></app-nav>
     </div>
 
     <div class="div-header">
-        <app-header></app-header>
+        <app-header (menufilho)="menuts()"></app-header>
     </div>
 
 </div>

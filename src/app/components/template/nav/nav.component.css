@@ -14,7 +14,8 @@
 }
 
 .principal .logo .img{
-    width: 150px;
+    width: 100px;
+    height: 7vh;
 }
 
 .principal .nav{
@@ -38,17 +39,21 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul li a .link{
+    display: flex;
+    align-items: center;
 }
 
 .nav ul li a span{
     color: #ffff;
+    margin-left: 1rem;
 }
 
-.nav ul li a .icon{
-    position: absolute;
-    left: 100px;
+.nav ul li a .link i{
     color: white;
-    margin-left: 50px;
 }
 
 .nav ul li ul{
@@ -59,7 +64,7 @@
 .nav ul li ul li{
     display: flex;
     align-items: center;
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .nav ul li ul li i{
@@ -100,4 +105,14 @@ i{
     transform: rotate(0deg);
     transition: 0.5s;
 }
+
+.menu-open{
+    display: block;
+}
+
+.menu-close{
+    display: none;
+}
+
+
 

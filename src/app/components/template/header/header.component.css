@@ -17,6 +17,11 @@ header{
     background-color: white;
 }
 
+.header .infoheader a i{
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
 .header .infoheader .sair{
     font-size: 12px;
     padding: 5px;

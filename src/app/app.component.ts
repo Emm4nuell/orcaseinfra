@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.css']
 })
 export class AppComponent {
+
+
+  menu: boolean = true;
+
+  menuts(): boolean{
+    return this.menu = !this.menu;
+  }
+
   title = 'orcaseinfra';
 }
